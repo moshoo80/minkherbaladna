@@ -1,0 +1,105 @@
+
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>منتجات من خير بلدنا | مأكولات ريفية أصيلة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo-wrap" aria-hidden="true">
+      <img src="images/logo.png" alt="شعار منتجات من خير بلدنا" class="logo">
+    </div>
+
+    <div class="site-title" role="banner">
+      <h1>🏡 منتجات من خير بلدنا</h1>
+      <p>منتجات ريفية أصيلة بطعم زمان</p>
+    </div>
+  </header>
+
+  <!-- Side buttons -->
+  <div class="side-buttons" aria-hidden="true">
+    <a class="wh" href="https://wa.me/201206684770" target="_blank" title="راسلنا على واتساب">💬</a>
+    <a class="fb" href="https://www.facebook.com/profile.php?id=61582722145149" target="_blank" title="صفحتنا على فيسبوك">f</a>
+  </div>
+
+  <button class="browse-btn" id="browseBtn">🛒 تصفح المنتجات</button>
+
+  <section class="hero" role="region" aria-label="ترحيب">
+    <div class="welcome">
+      <h2>مرحبًا بكم في منتجات من خير بلدنا</h2>
+      <p>نقدّم لكم أشهى المنتجات الريفية الأصيلة بطعمها الطبيعي وجودتها العالية من قلب الريف المصري ❤️</p>
+    </div>
+
+    <div style="min-width:110px;">
+      <img src="images/logo.png" alt="" style="width:110px;height:110px;object-fit:contain;border-radius:10px;">
+    </div>
+  </section>
+
+  <main id="catalog">
+    <div class="grid" id="productGrid">
+      <article class="card">\n        <img src="images/images-39.jpg" alt="عسل نحل">\n        <div class="product-name">عسل نحل</div>\n      </article>\n\n      <article class="card">\n        <img src="images/2302363_0.jpg" alt="فطير مشلتت (وسط - كبير)">\n        <div class="product-name">فطير مشلتت (وسط - كبير)</div>\n      </article>\n\n      <article class="card">\n        <img src="images/1649595189.jpg" alt="رقاق فلاحي">\n        <div class="product-name">رقاق فلاحي</div>\n      </article>\n\n      <article class="card">\n        <img src="images/images-33.jpg" alt="قرص باكون">\n        <div class="product-name">قرص باكون</div>\n      </article>\n\n      <article class="card">\n        <img src="images/images-30.jpg" alt="قراقيش (خشنة - ناعمة)">\n        <div class="product-name">قراقيش (خشنة - ناعمة)</div>\n      </article>\n\n      <article class="card">\n        <img src="images/images-35.jpg" alt="بسكوت شاي">\n        <div class="product-name">بسكوت شاي</div>\n      </article>\n\n      <article class="card">\n        <img src="images/images-36.jpg" alt="قرص سادة">\n        <div class="product-name">قرص سادة</div>\n      </article>\n\n      <article class="card">\n        <img src="images/قرص-سادة-و-عجوة-240.jpg" alt="قرص عجوة">\n        <div class="product-name">قرص عجوة</div>\n      </article>\n\n      <article class="card">\n        <img src="images/APP-SIZE-06-1.jpg" alt="قرص ملبن">\n        <div class="product-name">قرص ملبن</div>\n      </article>\n\n      <article class="card">\n        <img src="images/images-31.jpg" alt="زبدة جاموسي">\n        <div class="product-name">زبدة جاموسي</div>\n      </article>\n\n      <article class="card">\n        <img src="images/images-32.jpg" alt="زبدة بقري">\n        <div class="product-name">زبدة بقري</div>\n      </article>\n\n      <article class="card">\n        <img src="images/212.jpg" alt="سمن جاموسي">\n        <div class="product-name">سمن جاموسي</div>\n      </article>\n\n      <article class="card">\n        <img src="images/images-38.jpg" alt="سمن بقري">\n        <div class="product-name">سمن بقري</div>\n      </article>\n\n      <article class="card">\n        <img src="images/2528500.jpg" alt="مورته">\n        <div class="product-name">مورته</div>\n      </article>\n\n      <article class="card">\n        <img src="images/images-34.jpg" alt="جبنة قديمة">\n        <div class="product-name">جبنة قديمة</div>\n      </article>\n\n
+    </div>
+
+    <!-- Order form -->
+    <section class="order-form" aria-label="نموذج الطلب">
+      <h3>اطلب الآن</h3>
+      <label for="custName">الاسم</label>
+      <input id="custName" placeholder="اكتب اسمك">
+      <label for="custPhone">رقم الهاتف (اختياري)</label>
+      <input id="custPhone" placeholder="رقم للتواصل">
+      <label for="custOrder">الطلب</label>
+      <textarea id="custOrder" rows="4" placeholder="اكتب طلبك هنا..."></textarea>
+      <button id="sendOrder">إرسال الطلب عبر واتساب</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-note">جميع المنتجات من خير بلدنا – منتجات ريفية أصيلة 🌾</div>
+    <div style="margin-top:6px;"><button onclick="window.open('https://wa.me/201206684770','_blank')" style="background:transparent;border:1px solid rgba(0,0,0,0.06);padding:8px 12px;border-radius:10px;cursor:pointer;">اتصل بنا</button></div>
+  </footer>
+
+  <script>
+    // scroll to catalog
+    document.getElementById('browseBtn').addEventListener('click', function(){
+      document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // intersection observer for cards
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.card').forEach(c => observer.observe(c));
+
+    // order form sends prefilled whatsapp message
+    document.getElementById('sendOrder').addEventListener('click', function(){
+      const name = document.getElementById('custName').value.trim();
+      const phone = document.getElementById('custPhone').value.trim();
+      const order = document.getElementById('custOrder').value.trim();
+      if(!order){
+        alert('من فضلك اكتب طلبك في خانة الطلب أولاً.');
+        return;
+      }
+      let msg = 'طلب من موقع منتجات من خير بلدنا%0A';
+      if(name) msg += 'الاسم: ' + encodeURIComponent(name) + '%0A';
+      if(phone) msg += 'الهاتف: ' + encodeURIComponent(phone) + '%0A';
+      msg += 'الطلب: ' + encodeURIComponent(order);
+      const wa = 'https://wa.me/201206684770?text=' + msg;
+      window.open(wa, '_blank');
+    });
+  </script>
+
+</body>
+</html>

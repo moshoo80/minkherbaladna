@@ -1,0 +1,55 @@
+
+:root{
+  --bg:#f6eeda;
+  --gold:#d4b36a;
+  --text:#2b2b2b;
+  --card-bg: rgba(255,255,255,0.9);
+  --radius:14px;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:'Amiri', serif; background:var(--bg); color:var(--text); direction:rtl;}
+header{max-width:1100px;margin:28px auto;padding:12px 18px;display:flex;align-items:center;gap:16px;justify-content:center;flex-wrap:wrap;}
+.logo{width:100px;height:100px;object-fit:contain;border-radius:10px;}
+.site-title h1{margin:0;font-size:30px;color:var(--text);font-weight:700;}
+.site-title p{margin:6px 0 0;color:#7b6a45;font-size:16px;font-weight:500;}
+
+/* side buttons left */
+.side-buttons{position:fixed;left:14px;top:40%;display:flex;flex-direction:column;gap:12px;z-index:999;}
+.side-buttons a{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:white;box-shadow:0 6px 16px rgba(0,0,0,0.14);}
+
+/* whatsapp (green) and facebook (blue) */
+.side-buttons a.wh{background:#25D366;}
+.side-buttons a.fb{background:#1877F2;}
+
+/* browse button fixed right */
+.browse-btn{position:fixed;top:150px;right:16px;z-index:90;background:var(--gold);color:#fff;padding:12px 16px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.12);font-weight:700;cursor:pointer;border:none;display:flex;align-items:center;gap:8px;}
+
+/* hero */
+.hero{max-width:1100px;margin:8px auto 18px;padding:18px;display:flex;align-items:center;justify-content:space-between;gap:18px;background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.55));border-radius:var(--radius);box-shadow:0 6px 18px rgba(32,32,32,0.06);}
+.welcome h2{margin:0 0 6px 0;color:var(--gold);font-size:26px;font-weight:700;}
+.welcome p{margin:0;font-size:16px;color:var(--text);opacity:0.95;}
+
+/* grid */
+main{max-width:1100px;margin:22px auto;padding:0 18px 120px;}
+.grid{display:grid;grid-template-columns: repeat(3, 1fr);gap:18px;}
+.card{background:var(--card-bg);border-radius:12px;overflow:hidden;padding:10px;text-align:center;box-shadow:0 8px 20px rgba(10,10,10,0.04);transform: translateY(18px);opacity:0;transition: transform .6s cubic-bezier(.2,.9,.3,1), opacity .6s ease;}
+.card.visible{transform: translateY(0);opacity:1;}
+.card img{width:100%;height:260px;object-fit:cover;border-radius:10px;transition: transform .45s ease;}
+.card:hover img{transform: scale(1.06);}
+.product-name{margin-top:10px;font-weight:700;font-size:17px;color:var(--text);}
+
+/* order form */
+.order-form{max-width:700px;margin:30px auto;padding:18px;background:rgba(255,255,255,0.92);border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.05);}
+.order-form h3{margin:0 0 8px 0;font-size:20px;color:var(--gold);}
+.order-form label{display:block;margin:8px 0 4px;font-weight:600;}
+.order-form input, .order-form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.08);font-size:15px;font-family:'Amiri', serif;}
+.order-form button{background:var(--gold);color:#fff;border:none;padding:12px 16px;border-radius:10px;font-weight:700;cursor:pointer;margin-top:10px;}
+
+/* footer */
+footer{max-width:1100px;margin:10px auto 60px;padding:18px;display:flex;flex-direction:column;gap:12px;align-items:center;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.5), rgba(255,255,255,0.45));}
+.footer-note{color:#6b6250;font-size:14px;text-align:center;width:100%;}
+
+/* responsive */
+@media (max-width:1000px){.grid{grid-template-columns: repeat(2, 1fr);} .card img{height:220px;} .logo{width:86px;height:86px;}}
+@media (max-width:600px){.grid{grid-template-columns: 1fr;} header{padding:10px;} .hero{flex-direction:column;text-align:center;gap:12px;} .browse-btn{display:none;} .side-buttons{left:8px;}}
